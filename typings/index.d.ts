@@ -1,12 +1,12 @@
 export interface TransferProps {
   dataSource: RecordType[];
-  titles: string[];
-  operations: TransferDirection;
-  status: string;
-  showSearch: boolean;
-  onSearch: (dir: TransferDirection, value: string) => void;
-  width: string;
-  height: string;
+  titles?: string[];
+  operations?: TransferDirection;
+  status?: string;
+  showSearch?: boolean;
+  onSearch?: (dir: TransferDirection, value: string) => void;
+  width?: string;
+  height?: string;
 }
 
 export enum TransferDirectionsTypes {

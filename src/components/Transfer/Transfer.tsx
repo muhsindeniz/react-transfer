@@ -140,13 +140,17 @@ const Transfer = ({
   };
 
   const searchHandleSourceChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    onSearch(TransferDirection.left, e.target.value);
-    setSourceDataSearch(e.target.value);
+    if (onSearch !== undefined) {
+      onSearch(TransferDirection.left, e.target.value);
+      setSourceDataSearch(e.target.value);
+    }
   };
 
   const searchHandleTargetChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    onSearch(TransferDirection.right, e.target.value);
-    setSourceDataSearch(e.target.value);
+    if (onSearch !== undefined) {
+      onSearch(TransferDirection.right, e.target.value);
+      setSourceDataSearch(e.target.value);
+    }
   };
 
   const borderStatus = () => {
@@ -193,7 +197,7 @@ const Transfer = ({
               {sourceData.length} items
             </div>
           </HeaderAction>
-          <div>{titles[0]}</div>
+          <div>{titles && titles[0]}</div>
         </CardHeader>
 
         <CardBody
@@ -338,7 +342,7 @@ const Transfer = ({
               {targetData.length} items
             </div>
           </HeaderAction>
-          <div>{titles[1]}</div>
+          <div>{titles && titles[1]}</div>
         </CardHeader>
 
         <CardBody
