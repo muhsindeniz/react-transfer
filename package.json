@@ -1,8 +1,5 @@
 {
   "name": "@muhsindeniz/react-transfer",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/muhsindeniz"
-  },
   "version": "1.0.9",
   "description": "React Transfer enables the user to move one or more list items between lists",
   "scripts": {
@@ -11,6 +8,8 @@
   },
   "author": "Muhsin Deniz",
   "license": "MIT",
+  "main": "dist/cjs/index.d.ts",
+  "module": "dist/esm/index.d.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/muhsindeniz/react-transfer.git"
@@ -21,22 +20,17 @@
     "@rollup/plugin-commonjs": "^24.1.0",
     "@rollup/plugin-node-resolve": "^15.0.2",
     "@rollup/plugin-typescript": "^11.1.0",
+    "@types/node": "^18.16.0",
     "@types/react": "^18.0.37",
+    "@types/react-dom": "^18.0.11",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "@types/react-dom": "^18.0.11",
     "rollup": "^3.20.7",
     "rollup-plugin-dts": "^5.3.0",
     "tslib": "^2.5.0",
     "typescript": "^5.0.4"
   },
-  "peerDependencies": {
-    "@stitches/react": "^1.2.8",
-    "react": "^16.8.0 || ^17 || ^18"
-  },
-  "main": "dist/index.d.ts",
-  "module": "dist/index.d.ts",
-  "types": "src/index.d.ts",
+  "types": "dist/index.d.ts",
   "keywords": [
     "react",
     "transfer",
@@ -45,11 +39,12 @@
     "react-transfer-list"
   ],
   "files": [
-    "dist",
-    "package.json",
-    "README.md"
+    "dist"
   ],
-  "engines": {
-    "node": ">=12.22.0"
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/muhsindeniz"
+  },
+  "dependencies": {
+    "@stitches/react": "^1.2.8"
   }
 }

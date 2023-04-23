@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
 import {
-  RecordType,
   TransferDirection,
   TransferDirectionsTypes,
   TransferProps,
@@ -222,7 +221,7 @@ const Transfer = ({
                 </svg>
                 <SearchInput
                   placeholder="Search here"
-                  onChange={(e) => searchHandleSourceChange(e)}
+                  onChange={(e: any) => searchHandleSourceChange(e)}
                 />
               </FormControl>
             </SearchContainer>
@@ -240,7 +239,7 @@ const Transfer = ({
                 <ListContent key={item.key} id={item.key}>
                   <Input
                     id={item.key}
-                    onChange={(e) => selectLeftItemHandle(e)}
+                    onChange={(e: any) => selectLeftItemHandle(e)}
                     type="checkbox"
                     value={item.key}
                     checked={
@@ -367,7 +366,7 @@ const Transfer = ({
                 </svg>
                 <SearchInput
                   placeholder="Search here"
-                  onChange={(e) => searchHandleTargetChange(e)}
+                  onChange={(e: any) => searchHandleTargetChange(e)}
                 />
               </FormControl>
             </SearchContainer>
@@ -384,7 +383,7 @@ const Transfer = ({
               >
                 <Input
                   id={item.key}
-                  onChange={(e) => selectRightItemHandle(e)}
+                  onChange={(e: any) => selectRightItemHandle(e)}
                   type="checkbox"
                   value={item.key}
                   checked={
