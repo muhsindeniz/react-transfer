@@ -4,8 +4,9 @@ import {
   RecordType,
   TransferDirection,
   TransferDirectionsTypes,
+  TransferProps,
   TransferStatusTypes,
-} from "./Transfer.types";
+} from "@/typings";
 import {
   Container,
   Card,
@@ -21,17 +22,6 @@ import {
   FormControl,
   Input,
 } from "./style/styled";
-
-interface TransferProps {
-  dataSource: RecordType[];
-  titles: string[];
-  operations: TransferDirection;
-  status: string;
-  showSearch: boolean;
-  onSearch: (dir: TransferDirection, value: string) => void;
-  width: string;
-  height: string;
-}
 
 const Transfer = ({
   dataSource,

@@ -1,27 +1,22 @@
 {
   "compilerOptions": {
-    "baseUrl": "./",
     "target": "es2018",
     "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
+    "baseUrl": "./",
     "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "noFallthroughCasesInSwitch": true,
     "module": "es2015",
     "moduleResolution": "node",
-    "sourceMap": true,
+    "noUncheckedIndexedAccess": true,
+    "allowSyntheticDefaultImports": true,
     "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noImplicitAny": false,
+    "typeRoots": ["./typings", "./node_modules/@types"],
     "jsx": "react",
-    "declarationMap": true,
+    "outDir": "dist",
     "noEmit": true,
-    "declaration": true,
-    "outDir": "./dist"
+    "allowJs": true,
+    "paths": {
+      "@/*": ["./*"]
+    }
   },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules", "dist"]
+  "include": ["typings/**/*.d.ts", "**/*.ts", "**/*.tsx"]
 }
