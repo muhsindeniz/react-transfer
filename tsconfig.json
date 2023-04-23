@@ -1,38 +1,27 @@
 {
   "compilerOptions": {
-    "target": "ES5",
-    "forceConsistentCasingInFileNames": true,
-    "strict": true,
+    "baseUrl": "./",
+    "target": "es2018",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
     "skipLibCheck": true,
-    "jsx": "react-jsx",
-    "module": "ES6",
-    "declaration": true,
-    "declarationDir": "types",
-    "rootDir": "src",
-    "noImplicitReturns": true,
-    "noImplicitThis": true,
-    "noImplicitAny": true,
-    "strictNullChecks": true,
-    "baseUrl": "src/",
     "esModuleInterop": true,
-    "emitDeclarationOnly": true,
-    "sourceMap": true,
-    "outDir": "dist",
-    "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
-    "paths": {
-      "components": ["src/components/*"]
-    }
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "es2015",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noImplicitAny": false,
+    "jsx": "react",
+    "declarationMap": true,
+    "noEmit": true,
+    "declaration": true,
+    "outDir": "./dist"
   },
   "include": ["src/**/*"],
-  "exclude": [
-    "node_modules",
-    "build",
-    "dist",
-    "scripts",
-    "acceptance-tests",
-    "webpack",
-    "jest"
-  ],
-  "types": ["typePatches"]
+  "exclude": ["node_modules", "dist"]
 }
