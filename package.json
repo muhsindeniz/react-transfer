@@ -1,9 +1,9 @@
 {
   "name": "@muhsindeniz/react-transfer",
-  "version": "1.0.5",
+  "version": "1.0.7",
   "description": "React Transfer enables the user to move one or more list items between lists",
   "scripts": {
-    "build": "rollup -c --verbose --silent --watch",
+    "build": "rollup -c",
     "type-check": "tsc --noEmit"
   },
   "author": "Muhsin Deniz",
