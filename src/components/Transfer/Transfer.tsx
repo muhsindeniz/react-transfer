@@ -1,13 +1,11 @@
 import React, { useState } from "react";
-import { IoIosSearch } from "react-icons/io";
 
-import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import {
   RecordType,
   TransferDirection,
   TransferDirectionsTypes,
   TransferStatusTypes,
-} from "./Transfer.types"
+} from "./Transfer.types";
 import {
   Container,
   Card,
@@ -218,7 +216,20 @@ const Transfer = ({
           {showSearch && (
             <SearchContainer>
               <FormControl>
-                <IoIosSearch />
+                <svg
+                  width="13"
+                  height="13"
+                  viewBox="0 0 13 13"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fillRule="evenodd"
+                    clipRule="evenodd"
+                    d="M12.0178 11.1912L9.51939 8.69333C10.2644 7.76393 10.6697 6.60791 10.668 5.41675C10.668 2.51875 8.31597 0.166748 5.41797 0.166748C2.51997 0.166748 0.167969 2.51875 0.167969 5.41675C0.167969 8.31475 2.51997 10.6667 5.41797 10.6667C6.60914 10.6684 7.76515 10.2632 8.69455 9.51816L11.1924 12.0166L12.0178 11.1912ZM9.50195 5.41679C9.50362 6.47871 9.09019 7.49922 8.34987 8.26054L8.26237 8.34804C7.50105 9.08835 6.48054 9.50179 5.41862 9.50012C3.16229 9.50012 1.33529 7.67254 1.33529 5.41679C1.33529 3.16046 3.16229 1.33346 5.41862 1.33346C7.67437 1.33346 9.50195 3.16046 9.50195 5.41679Z"
+                    fill="#313131"
+                  />
+                </svg>
                 <SearchInput
                   placeholder="Search here"
                   onChange={(e) => searchHandleSourceChange(e)}
@@ -268,7 +279,21 @@ const Transfer = ({
             color: leftSelectData.length < 1 ? "#333" : "#fff",
           }}
         >
-          <AiOutlineRight size={16} />
+          <svg
+            width="8"
+            height="14"
+            viewBox="0 0 8 14"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1 13L7 7L0.999999 1"
+              stroke="#1F1F1F"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+
           {operations && operations[0]}
         </TransferButton>
         <TransferButton
@@ -281,7 +306,20 @@ const Transfer = ({
             color: rightSelectData.length < 1 ? "#333" : "#fff",
           }}
         >
-          <AiOutlineLeft size={16} />
+          <svg
+            width="8"
+            height="14"
+            viewBox="0 0 8 14"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M7 1L0.999999 7L7 13"
+              stroke="#1F1F1F"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
           {operations && operations[1]}
         </TransferButton>
       </TransferActionButtons>
@@ -323,7 +361,20 @@ const Transfer = ({
           {showSearch && (
             <SearchContainer>
               <FormControl>
-                <IoIosSearch />
+                <svg
+                  width="13"
+                  height="13"
+                  viewBox="0 0 13 13"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fillRule="evenodd"
+                    clipRule="evenodd"
+                    d="M12.0178 11.1912L9.51939 8.69333C10.2644 7.76393 10.6697 6.60791 10.668 5.41675C10.668 2.51875 8.31597 0.166748 5.41797 0.166748C2.51997 0.166748 0.167969 2.51875 0.167969 5.41675C0.167969 8.31475 2.51997 10.6667 5.41797 10.6667C6.60914 10.6684 7.76515 10.2632 8.69455 9.51816L11.1924 12.0166L12.0178 11.1912ZM9.50195 5.41679C9.50362 6.47871 9.09019 7.49922 8.34987 8.26054L8.26237 8.34804C7.50105 9.08835 6.48054 9.50179 5.41862 9.50012C3.16229 9.50012 1.33529 7.67254 1.33529 5.41679C1.33529 3.16046 3.16229 1.33346 5.41862 1.33346C7.67437 1.33346 9.50195 3.16046 9.50195 5.41679Z"
+                    fill="#313131"
+                  />
+                </svg>
                 <SearchInput
                   placeholder="Search here"
                   onChange={(e) => searchHandleTargetChange(e)}

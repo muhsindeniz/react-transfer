@@ -1,9 +1,9 @@
 {
   "name": "@muhsindeniz/react-transfer",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "React Transfer enables the user to move one or more list items between lists",
   "scripts": {
-    "build": "rollup -c",
+    "build": "rollup -c --verbose --silent --watch",
     "type-check": "tsc --noEmit"
   },
   "author": "Muhsin Deniz",
@@ -24,15 +24,12 @@
   },
   "main": "dist/cjs/index.d.ts",
   "module": "dist/esm/index.d.ts",
+  "types": "src/index.ts",
   "files": [
     "dist",
     "package.json",
     "README.md"
   ],
-  "types": "dist/index.d.ts",
-  "dependencies": {
-    "react-icons": "^4.8.0"
-  },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/muhsindeniz"
   }
