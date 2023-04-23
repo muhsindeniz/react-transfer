@@ -7,7 +7,7 @@ import {
   TransferDirection,
   TransferDirectionsTypes,
   TransferStatusTypes,
-} from "./types";
+} from "./Transfer.types"
 import {
   Container,
   Card,

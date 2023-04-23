@@ -3,12 +3,13 @@
   "version": "1.0.3",
   "description": "React Transfer enables the user to move one or more list items between lists",
   "scripts": {
-    "rollup": "rollup -c",
+    "build": "rollup -c",
     "type-check": "tsc --noEmit"
   },
   "author": "Muhsin Deniz",
   "license": "ISC",
   "type": "module",
+  "private": false,
   "devDependencies": {
     "@rollup/plugin-commonjs": "^24.1.0",
     "@rollup/plugin-node-resolve": "^15.0.2",
@@ -24,7 +25,9 @@
   "main": "dist/cjs/index.d.ts",
   "module": "dist/esm/index.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "package.json",
+    "README.md"
   ],
   "types": "dist/index.d.ts",
   "dependencies": {
