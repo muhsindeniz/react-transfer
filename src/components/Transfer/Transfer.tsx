@@ -26,7 +26,7 @@ import {
 
 interface TransferProps {
   dataSource: RecordType[];
-  titles: object[];
+  titles: string[];
   operations: TransferDirection;
   status: string;
   showSearch: boolean;
